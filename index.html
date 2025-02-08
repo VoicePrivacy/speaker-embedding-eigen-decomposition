@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 70%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .audio-container {
+            text-align: center;
+        }
+        .audio-container audio {
+            display: block;
+            margin: 0 auto;
+        }
+        .audio-container button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .audio-container button:hover {
+            background-color: #2980b9;
+        }
+        .paper-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .paper-info h2 {
+            font-size: 1.5em;
+            color: #34495e;
+        }
+        .paper-info p {
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="paper-info">
+            <h2>Investigation of the subspace with different machine and human perceptions in asynchronous voice anonymization</h2>
+            <p></p>
+        </div>
+        <h1>Demo</h1>
+        <p></p>
+        <div class="audio-container">
+            <audio id="audioPlayer" controls>
+                <source src="your-audio-file.mp3" type="audio/mpeg">
+                您的浏览器不支持音频播放。
+            </audio>
+        </div>
+    </div>
+
+    <script>
+        function playAudio() {
+            const audioPlayer = document.getElementById('audioPlayer');
+            audioPlayer.play();
+        }
+    </script>
+</body>
+</html>
